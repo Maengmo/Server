@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 
+  
+  		web.xml == Deployment Descriptor == 배포 서술자
+  		- 아파치 톰캣이 웹 사이트 운영에 필요한 여러가지 설정하는 파일
+  		
+  		브라우저가 웹을 통해서 자바 파일을 직접 호출이 불가능!!
+  			> 가상 주소 생성 > 대신 자바 파일을 호출하게 설정!!
+  				
+   -->
+   
+   <servlet>
+   		<servlet-name>ex03</servlet-name>
+   		<servlet-class>com.test.servlet.Ex03</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>ex03</servlet-name>
+   		<url-pattern>/ex03</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+   		<servlet-name>ex04</servlet-name>
+   		<servlet-class>com.test.servlet.Ex04</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>ex04</servlet-name>
+   		<url-pattern>/ex04</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>ex04ok</servlet-name>
+   		<servlet-class>com.test.servlet.Ex04Ok</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>ex04ok</servlet-name>
+   		<url-pattern>/ex04ok</url-pattern>
+   </servlet-mapping>
+   
+</web-app>
