@@ -1,0 +1,296 @@
+src > main > webapp > "ex01.jsp"
+
+JSP, Java Server Pages
+- 자바를 사용해서 서버측에서 페이지를 만드는 기술
+- Servlet의 다음 버전
+
+서블릿 vs JSP
+
+1. 서블릿 
+	a. 장점 : 자바 기반. 자바 구문을 사용할 수 있다. > 자바 클래스 사용
+	b. 단점 : 자바 기반. 클라이언트 코드를 작성하기 어려움. > 문자열 취급
+														 > 가상 주소 매핑 필요
+
+2. JSP(= 웹페이지처럼 보이는 서블릿)
+	a. 장점 : HTML 문서 기반. 클라리언트 코드 작성이 쉽다. > 구문 인식
+														 > 가상 주소 매핑 불필요
+	b. 단점 : HTML 문서 기반. 자바 구문 작성이 불편하다.
+	
+3. 서블릿 + JSP
+	a. 서블릿 : 자바 코드 담당
+	b. JSP : 클라이언트 코드 담당
+	
+
+
+JSP 구성 요소
+
+1. JSP 지시자, JSP Directive
+	- page 지시자
+	- include 지시자
+	- taglib 지시자
+
+2. 스크립트 요소, Scripting Elements
+	- 스크립틀릿
+	- 익스프레션
+	- 선언부
+
+3. 액션 태그, Action Tags
+	- 기본 액션 태그
+	- 확장 액션 태그 : JSTL
+	- 사용자 정의 액션 태그
+	
+SSR(Server Side Rendering)
+- HTML 페이지를 서버측에서 만든다.
+- 전통적 방식
+
+CSR(Client Side Rendering) + REST API(Restful API) + MSA
+- HTML 페이지를 JavaScript로 만든다.
+- 필요한 데이터만 서버랑 송수신을 통해 얻는다.
+- Ajax, JavaScript FrameWork(Angular, React 등..)
+
+1. JSP 지시자, JSP Directive
+	- 톰캣에게 여러가지 상황을 알려주는 역할
+	- page 지시자 <%@ %>
+	
+a. page 지시자
+	- JSP 페이지 관련 설정
+	- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    - language="java" : 현재 페이지를 처리하는 서버측 언어가 java입니다.
+    - contentType="text/html; charset=UTF-8" : 브라우저에게 돌려줄 임시 페이지에 관련된 설정
+    - pageEncoding="UTF-8" : 현재 JSP 페이지의 인코딩
+    
+    - <%@page import="java.util.Calendar"%> : 자바의 import
+    - errorPage="URL" : 오류가 발생하면 자동으로 URL로 이동. 오류 페이지
+    
+b. include 지시자
+	- <%@ include file="URL"%>
+	- 다른 JSP/HTML 페이지를 또 다른 JSP 페이지의 일부 영역에 삽입하는 기술
+	- 조각 페이지
+	- webapp > ex04_include.jsp : 메인 페이지
+	- webapp > "inc" > "sub.jsp" : 조각 페이지
+	
+2. 스크립트 요소, Script Elements
+
+a. 스크립틀릿 > 일을 한다.
+	- <% %>
+	- 이 영역은 자바 영역이다.
+	- 순수 자바 코드를 HTML 페이지에서 작성 할 수 있도록 선언
+	- Scriptlet = Script + Applet
+	- 대부분의 비즈니스 코드 작성 담당(대부분의 업무 + 알고리즘 구현)
+	- 가장 중요한 역할
+
+b. 익스프레션 > 출력한다.
+    - <%= 값 %>
+    - 자바의 값을 HTML 문서에 출력한다.
+    
+c. 선언부
+	- <%! %>
+	- ex06_declaration.jsp
+	
+	
+JSP 내장 객체, JSP Implicit Object
+- 개발자가 직접 생성하는 객체가 아니라, JSP(톰캣)가 미리 만들어서 제공하는 객체
+- 예약어 형태로 제공
+
+- request, response, session, pageContext
+- out, application
+- config, page, exception 등..
+
+- pageContext, request, session, application
+	: 객체 내부에 사용자(개발자) 데이터를 관리하는 저장소(컬렉션)를 가진다.(*****)
+	: 내장객체.setAttribute(key, value)
+	: 내장객체.getAttribute(key)
+	
+1. request
+	- 클라이언트 > (행동) > 서버
+	a. 전송된 데이터 가져오기
+	b. 전송된 데이터 인코딩
+	c. 요청에 관련된 정보 가져오기
+	
+	- ex07.jsp
+	- ex07ok.jsp
+	
+	- ex08.jsp
+	- ex08ok.jsp
+	
+2. response
+	- 서버 > (행동) > 클라이언트
+	a. 돌려줄 임시페이지 제작 > response.getWriter() > printWriter()
+	b. 돌려줄 임시 페이지 인코딩 > response.setCharacterEncoding("UTF-8")
+	c. 돌려줄 내용의 MIME 지정 > 파일 업로드 수업...
+	d. 페이지 이동하기
+	
+	ex11_response_one.jsp
+	ex11_response_two.jsp
+	
+3. PageContext
+	- 페이지 실행(요청~응답)중에 관련된 데이터를 저장하는 객체
+	a. 페이지 이동하기
+		- pageContext.forward()
+	
+	- ex12_pagecontext_one.jsp
+	- ex12_pagecontext_two.jsp
+	
+4. out
+	- 응답  페이지 출력 스트림 객체
+	- 서블릿 PrintWriter와 같은 역할
+
+5. session
+	- ex14_session.jsp
+	- ex14_session_2.jsp
+	- 세션에 저장한 변수 : 전역 변수(페이지간에 전달 과정 없이 언제든 입출력 가능)
+	
+	- ex16_session.jsp
+	- ex16_del.jsp
+	- ex16_reset.jsp
+	- ex16_set.jsp
+	- ex16_interval.jsp
+	
+6. Application
+	- ex17_application.jsp
+	- ex17_application_ok.jsp
+	- ex17_application_view.jsp
+    
+pageContext, request, session, application 생명 주기
+
+- pageContext < request < session < application
+
+- A 페이지(데이터 저장) > B 페이지(데이터 접근)
+
+- ex18_one.jsp
+- ex18_two.jsp
+
+
+주제
+- "주소록"
+- CRUD
+
+1. 업무 > 생략
+2. DB 작업 > ERD(X) > 테이블 생성
+3. 클라이언트 작업 > 레이아웃 + 페이지 구현 > HTML, CSS, JavaScript
+JavaScript
+	- webapp > "address" 폴더 생성
+				> "list.jsp" 목록보기
+				> "add.jsp"  추가하기(폼)
+				> "addok.jsp" 추가하기(처리)
+				> "edit.jsp" 수정하기(폼)
+				> "editok.jsp" 수정하기(처리)
+				> "del.jsp"	 삭제하기(폼)
+				> "delok.jsp" 삭제하기(처리)
+				> "template.jsp" 임시페이지
+				
+	- webapp > address > "inc" 폴더 생성
+							> "header.jsp"
+							> "asset.jsp"
+							
+	- webapp > address > "asset" 폴더 생성
+							> "main.css"
+							
+웹 보안
+- 로그인, 로그아웃
+- 세션(쿠키) 기반의 인증
+- 현재 접속자가 해당 사이트의 구성원인지 확인하고, 특정 행동에 대한 허가를 하는 작업
+
+1. 인증, Authentication
+	- 현재 접속자가 해당 사이트의 구성원인지 확인
+	- 회원?
+	- 로그인
+	
+2. 허가, Authorization
+	- 특정 행동에 대한 허가를 하는 작업
+
+- webapp > "auth" 폴더 생성
+			> "index.jsp" 	: 시작 페이지(초기화면)
+			> "login.jsp"	: 로그인 폼 페이지
+			> "loginok.jsp"	: 로그인 처리 페이지 > 실제 인증 작업 수행
+			> "logout.jsp"	: 로그아웃 페이지
+			
+			> "member.jsp"	: 회원 전용 페이지 > 허가 작업	
+			> "admin.jsp"	: 관리자 전용 페이지 > 허가 작업
+
+
+JSP 수업 끝
+
+1. Servlet
+2. JSP	> JSP Model 1
+3. Servlet + JSP > JSP Model 2
+
+JSP Model
+1. JSP Model 1
+	- HTML + CSS + JavaScript + Java + Servlet + JSP = *.jsp
+	- <% java code %> + client code
+	- 코드가 뒤엉켜서 > 불편함.
+	
+2. JSP Model 2
+	- Servlet : 자바 코드 작성
+	- JSP : 클라이언트 코드 작성
+	- 디자인 패턴 : MVC 패턴 기반 구현
+
+MVC 디자인 패턴
+- Model	> 데이터 (관련 업무) 담당
+- View > 출력 업무 담당
+- Controller > 전체 업무 통제 역할
+
+Servlet
+- 자바 기반 + 웹 추가
+- 자바 작성 용이, 웹 작성 불편
+
+JSP
+- 웹 기반 + 자바 추가
+- 웹 작성 용이, 자바 작성 불편
+
+Servlet + JSP
+- 자바 작성(Servlet)
+- 웹 작성(JSP)
+
+Hello
+- "com.test.mvc" > "Hello.java"
+- webapp > "mvc" > "hello.jsp"
+
+JSP Model 2 + EL + JSTL
+- com.test.mvc > "Address.java"	: Controller
+			   > "AddressDAO.java" : Model(?)
+			   > "AddressVO.java" : Model
+- webapp > mvc > "address.jsp"	: view
+
+
+파일 업로드/다운로드
+- 클라이언트 > (복사) > 서버 : 업로드
+- 서버 > (복사) > 클라이언트 : 다운로드
+- 파일 업로드 라이브러리 : cos.jar
+
+- "com.test.file" > "FileTest.java" //서블릿
+				> "FileTestOk.java"
+- webapp > "file" > "filetest.jsp"	//jsp
+				 > "filetestok.jsp" 
+
+
+필요 프로젝트 및 파일
+- Memo - Dynamic Web Project
+- Context root : memo
+- Generate web.xml 생성
+
+파일 생성
+- Memo > "script.sql"
+- "com.test.memo"
+- webapp > WEB-INF
+- lib > ojdbc.jar, mylibrary.jar, jstl-1.2.jar
+
+- "com.test.memo"
+	- "List.java" //목록
+	- "Add.java" //글쓰기
+	- "Edit.java" //수정하기
+	- "Del.java" //삭제하기
+	
+- webapp > WEB-INF > "views"
+	- "list.jsp" //목록
+	- "add.jsp" //글쓰기
+	- "edit.jsp" //수정하기
+	- "del.jsp" //삭제하기
+	> views > "inc"
+				- "asset.jsp"
+				- header.jsp"
+				
+	
+

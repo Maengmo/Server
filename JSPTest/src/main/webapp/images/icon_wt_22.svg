@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176" height="176" viewBox="0 0 176 176">
+    <defs>
+        <linearGradient id="prefix__a" x1="15.807%" x2="95.871%" y1="15.907%" y2="96.019%">
+            <stop offset="0%" stop-color="#FFD800"/>
+            <stop offset="100%" stop-color="#FFD800" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__c" x1="-6.956%" x2="85.88%" y1="-6.956%" y2="85.88%">
+            <stop offset="0%" stop-color="#FFCC14"/>
+            <stop offset="100%" stop-color="#FFB90A"/>
+        </linearGradient>
+        <linearGradient id="prefix__h" x1="-24.814%" x2="63.418%" y1="10.352%" y2="64.622%">
+            <stop offset="0%" stop-color="#E9E9ED"/>
+            <stop offset="100%" stop-color="#DEDFE3"/>
+        </linearGradient>
+        <linearGradient id="prefix__i" x1="29.215%" x2="59.186%" y1="1.584%" y2="71.321%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__j" x1="7.172%" x2="39.431%" y1="7.172%" y2="39.431%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__k" x1="-24.814%" x2="63.418%" y1="11.248%" y2="64.291%">
+            <stop offset="0%" stop-color="#E9E9ED"/>
+            <stop offset="100%" stop-color="#DEDFE3"/>
+        </linearGradient>
+        <linearGradient id="prefix__l" x1="29.215%" x2="59.186%" y1="3.464%" y2="70.493%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__m" x1="50%" x2="50%" y1="104.541%" y2="-4.541%">
+            <stop offset="0%" stop-color="#61ADFF" stop-opacity=".8"/>
+            <stop offset="4%" stop-color="#5FABFF" stop-opacity=".83"/>
+            <stop offset="20%" stop-color="#5AA7FF" stop-opacity=".9"/>
+            <stop offset="38%" stop-color="#57A4FF" stop-opacity=".96"/>
+            <stop offset="61%" stop-color="#55A2FF" stop-opacity=".99"/>
+            <stop offset="100%" stop-color="#54A1FF"/>
+        </linearGradient>
+        <linearGradient id="prefix__n" x1="50%" x2="50%" y1="146.154%" y2="-46.154%">
+            <stop offset="0%" stop-color="#61ADFF" stop-opacity=".8"/>
+            <stop offset="4%" stop-color="#5FABFF" stop-opacity=".83"/>
+            <stop offset="20%" stop-color="#5AA7FF" stop-opacity=".9"/>
+            <stop offset="38%" stop-color="#57A4FF" stop-opacity=".96"/>
+            <stop offset="61%" stop-color="#55A2FF" stop-opacity=".99"/>
+            <stop offset="100%" stop-color="#54A1FF"/>
+        </linearGradient>
+        <linearGradient id="prefix__o" x1="50%" x2="50%" y1="109.524%" y2="-9.524%">
+            <stop offset="0%" stop-color="#61ADFF" stop-opacity=".8"/>
+            <stop offset="4%" stop-color="#5FABFF" stop-opacity=".83"/>
+            <stop offset="20%" stop-color="#5AA7FF" stop-opacity=".9"/>
+            <stop offset="38%" stop-color="#57A4FF" stop-opacity=".96"/>
+            <stop offset="61%" stop-color="#55A2FF" stop-opacity=".99"/>
+            <stop offset="100%" stop-color="#54A1FF"/>
+        </linearGradient>
+        <linearGradient id="prefix__p" x1="50%" x2="50%" y1="109.677%" y2="-9.677%">
+            <stop offset="0%" stop-color="#61ADFF" stop-opacity=".8"/>
+            <stop offset="4%" stop-color="#5FABFF" stop-opacity=".83"/>
+            <stop offset="20%" stop-color="#5AA7FF" stop-opacity=".9"/>
+            <stop offset="38%" stop-color="#57A4FF" stop-opacity=".96"/>
+            <stop offset="61%" stop-color="#55A2FF" stop-opacity=".99"/>
+            <stop offset="100%" stop-color="#54A1FF"/>
+        </linearGradient>
+        <filter id="prefix__d" width="155.2%" height="182.8%" x="-27.6%" y="-37.9%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.619607843 0 0 0 0 0.215686275 0 0 0 0 0 0 0 0 0.16 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="prefix__f" width="116.1%" height="124.1%" x="-8%" y="-8.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <circle id="prefix__b" cx="50.53" cy="50.53" r="50.53"/>
+        <path id="prefix__g" d="M65.77 15.514h-.234C61.276 5.347 50.931-.887 39.964.103c-10.967.99-20.032 8.975-22.407 19.74C7.327 20.668-.42 29.442.017 39.707.456 49.97 8.923 58.052 19.184 58h46.6c7.58 0 14.584-4.05 18.374-10.622 3.79-6.572 3.79-14.67 0-21.243-3.79-6.572-10.794-10.621-18.374-10.621h-.013z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#prefix__a)" fill-rule="nonzero" d="M143 81.65v-.12c0-33.137-26.863-60-60-60s-60 26.863-60 60v1c.1 32.27 26.92 59.07 60 59.07s59.9-26.8 60-59.07v-.88z" opacity=".3"/>
+        <g transform="translate(32.47 31)">
+            <mask id="prefix__e" fill="#fff">
+                <use xlink:href="#prefix__b"/>
+            </mask>
+            <use fill="url(#prefix__c)" fill-rule="nonzero" xlink:href="#prefix__b"/>
+            <g fill-rule="nonzero" filter="url(#prefix__d)" mask="url(#prefix__e)">
+                <g transform="translate(50.53 9)">
+                    <g>
+                        <use fill="#000" filter="url(#prefix__f)" xlink:href="#prefix__g"/>
+                        <use fill="url(#prefix__h)" xlink:href="#prefix__g"/>
+                    </g>
+                    <path fill="url(#prefix__i)" d="M67 25c0 13.807-11.193 25-25 25S17 38.807 17 25 28.193 0 42 0c6.63 0 12.99 2.634 17.678 7.322C64.366 12.011 67 18.37 67 25z" opacity=".35"/>
+                    <circle cx="65" cy="37" r="21" fill="url(#prefix__j)" opacity=".25"/>
+                </g>
+            </g>
+        </g>
+        <g fill-rule="nonzero" transform="translate(83 40)">
+            <path fill="url(#prefix__k)" d="M66.605 15.53h-.236C62.059 5.363 51.596-.871 40.503.119c-11.094.99-20.262 8.975-22.665 19.74C7.49 20.684-.346 29.458.097 39.723.54 49.987 9.103 58.068 19.483 58.016h47.135c7.667 0 14.752-4.05 18.586-10.622 3.834-6.573 3.834-14.67 0-21.243C81.37 19.578 74.285 15.53 66.618 15.53h-.013z"/>
+            <path fill="url(#prefix__l)" d="M68.08 25.016c0 13.807-11.418 25-25.5 25-14.084 0-25.5-11.193-25.5-25s11.416-25 25.5-25c6.762 0 13.248 2.634 18.03 7.322 4.783 4.689 7.47 11.047 7.47 17.678z" opacity=".35"/>
+            <circle cx="66.079" cy="37.016" r="21" fill="url(#prefix__j)" opacity=".25"/>
+        </g>
+        <path fill="url(#prefix__m)" fill-rule="nonzero" d="M131 69c1.598 0 2.904 1.249 2.995 2.824L134 72v66.06c0 1.657-1.343 3-3 3-1.598 0-2.904-1.249-2.995-2.824l-.005-.176V72c0-1.657 1.343-3 3-3z"/>
+        <path fill="url(#prefix__n)" fill-rule="nonzero" d="M3 0c1.598 0 2.904 1.399 2.995 3.163L6 3.36v7.28C6 12.496 4.657 14 3 14 1.402 14 .096 12.601.005 10.837L0 10.64V3.36C0 1.504 1.343 0 3 0z" opacity=".7" transform="translate(140 119)"/>
+        <path fill="url(#prefix__o)" fill-rule="nonzero" d="M143 78c1.598 0 2.904 1.249 2.995 2.824L146 81v31.5c0 1.657-1.343 3-3 3-1.598 0-2.904-1.249-2.995-2.824L140 112.5V81c0-1.657 1.343-3 3-3z"/>
+        <path fill="url(#prefix__p)" fill-rule="nonzero" d="M119 78c1.598 0 2.904 1.249 2.995 2.824L122 81v44c0 1.657-1.343 3-3 3-1.598 0-2.904-1.249-2.995-2.824L116 125V81c0-1.657 1.343-3 3-3z"/>
+    </g>
+</svg>

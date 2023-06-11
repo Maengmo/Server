@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176" height="176" viewBox="0 0 176 176">
+    <defs>
+        <linearGradient id="prefix__a" x1="11.966%" x2="76.719%" y1="39.557%" y2="57.339%">
+            <stop offset="0%" stop-color="#E9E9ED"/>
+            <stop offset="100%" stop-color="#DEDFE3"/>
+        </linearGradient>
+        <linearGradient id="prefix__b" x1="-2.524%" x2="132.291%" y1="7.243%" y2="116.982%">
+            <stop offset="0%" stop-color="#E9E9ED"/>
+            <stop offset="100%" stop-color="#DEDFE3"/>
+        </linearGradient>
+        <linearGradient id="prefix__c" x1="-3.663%" x2="42.62%" y1="5.405%" y2="43.868%">
+            <stop offset="10%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__d" x1="-53.24%" x2="121.103%" y1="-34.024%" y2="107.875%">
+            <stop offset="0%" stop-color="#E9E9ED"/>
+            <stop offset="100%" stop-color="#DEDFE3"/>
+        </linearGradient>
+        <linearGradient id="prefix__e" x1="-7.342%" x2="48.216%" y1="-27.461%" y2="47.6%">
+            <stop offset="10%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__f" x1="23.023%" x2="45.814%" y1="5.57%" y2="43.105%">
+            <stop offset="0%" stop-color="#FFD800"/>
+            <stop offset="100%" stop-color="#FFD800" stop-opacity=".3"/>
+        </linearGradient>
+        <linearGradient id="prefix__h" x1="11.514%" x2="74.919%" y1="16.687%" y2="71.562%">
+            <stop offset="0%" stop-color="#FFCF21"/>
+            <stop offset="100%" stop-color="#F7B91E"/>
+        </linearGradient>
+        <linearGradient id="prefix__k" x1="42.557%" x2="51.268%" y1="21.055%" y2="59.311%">
+            <stop offset="0%" stop-color="#F3F4FA"/>
+            <stop offset="100%" stop-color="#EEEFF5"/>
+        </linearGradient>
+        <linearGradient id="prefix__l" x1="6.435%" x2="44.031%" y1="6.556%" y2="44.047%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="prefix__m" x1="42.557%" x2="51.268%" y1="20.673%" y2="59.434%">
+            <stop offset="0%" stop-color="#F3F4FA"/>
+            <stop offset="100%" stop-color="#EEEFF5"/>
+        </linearGradient>
+        <linearGradient id="prefix__n" x1="6.882%" x2="44.092%" y1="6.435%" y2="44.031%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <ellipse id="prefix__g" cx="33.732" cy="33.5" rx="33.547" ry="33.5"/>
+        <filter id="prefix__i" width="137.1%" height="151.1%" x="-18.5%" y="-25.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.619607843 0 0 0 0 0.215686275 0 0 0 0 0 0 0 0 0.3 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(16 29)">
+        <rect width="126" height="42" y="41" fill="url(#prefix__a)" fill-rule="nonzero" rx="21"/>
+        <circle cx="50" cy="49" r="33" fill="url(#prefix__b)" fill-rule="nonzero"/>
+        <circle cx="50" cy="49" r="33" fill="url(#prefix__c)" fill-rule="nonzero" opacity=".3"/>
+        <circle cx="85" cy="46" r="22" fill="url(#prefix__d)" fill-rule="nonzero"/>
+        <circle cx="85" cy="46" r="22" fill="url(#prefix__e)" fill-rule="nonzero" opacity=".36"/>
+        <circle cx="39.763" cy="39.945" r="39.046" fill="url(#prefix__f)" fill-rule="nonzero" opacity=".33" transform="translate(34)"/>
+        <g transform="translate(40 7)">
+            <mask id="prefix__j" fill="#fff">
+                <use xlink:href="#prefix__g"/>
+            </mask>
+            <use fill="url(#prefix__h)" fill-rule="nonzero" xlink:href="#prefix__g"/>
+            <g fill-rule="nonzero" filter="url(#prefix__i)" mask="url(#prefix__j)">
+                <g transform="translate(-11.973 22.138)">
+                    <path fill="url(#prefix__k)" d="M80.017.035c-18.748-.737-35.966 10.28-43.13 27.597h-6.193C14.444 27.748 1.058 40.408.058 56.605c-1.097 18.017 13.473 32.82 31.543 32.82H78.25c24.373.007 44.271-19.46 44.765-43.794.494-24.334-18.599-44.59-42.952-45.569l-.045-.027z"/>
+                    <ellipse cx="78.195" cy="44.753" fill="url(#prefix__l)" rx="44.807" ry="44.745"/>
+                </g>
+            </g>
+        </g>
+        <g fill-rule="nonzero" transform="translate(28 29)">
+            <path fill="url(#prefix__m)" d="M79.818.035c-18.7-.74-35.876 10.322-43.023 27.709h-6.177c-16.21.117-29.562 12.828-30.56 29.09-1.094 18.092 13.44 32.955 31.464 32.955h46.532c24.312.007 44.161-19.54 44.654-43.972C123.2 21.384 104.156 1.046 79.863.062l-.045-.027z"/>
+            <ellipse cx="78" cy="44.935" fill="url(#prefix__n)" rx="44.696" ry="44.927"/>
+        </g>
+    </g>
+</svg>
