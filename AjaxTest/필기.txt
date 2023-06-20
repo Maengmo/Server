@@ -1,0 +1,24 @@
+Ajax, Asynchronous JavaScript and XML
+- 비동기 자바스크립트 & XML
+- 비동기 자바스크립트 통신 
+- 자바스크립트 <- (통신) -> 웹서버(톰캣)
+
+- 순수 자바스크립트 버전
+- jQuery 버전
+- ES6 자바스크립트 버전
+
+
+파일 생성
+- com.test.ajax > 
+
+				> "Ex02.
+				> "Ex02.java"
+				
+				
+				
+- views >
+		> "ex02.jsp"
+		
+> "Ex03.java"
+> "Ex03Data.java" //**중요 
+> "ex03.jsp" 
