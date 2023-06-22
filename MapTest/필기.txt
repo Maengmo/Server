@@ -1,0 +1,7 @@
+
+
+- "com.test.map"
+	- "Map.java"
+
+- webapp > WEB-INF > "views"
+	- "map.jsp"
