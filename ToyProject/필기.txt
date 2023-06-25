@@ -1,0 +1,78 @@
+기초 작업
+    패키지
+    - a. com.test.toy : 메인 패키지
+    - b. com.test.toy.user : 회원 패키지
+    - c. com.test.toy.user.repository : DB
+    - d. com.test.toy.board : 게시판 패키지
+    - e. com.test.toy.board.repository : DB
+    - g. com.test.toy.place
+    - h. com.test.toy.place.repository
+    파일
+    - a. com.test.toy
+    	- Index.java : 시작 페이지
+    - b. com.test.toy.user
+    	- Register.java : 회원 가입
+        - Login.java : 로그인
+        - Logout.java : 로그아웃
+        - Info.java : 정보 확인
+        - Unregister.java : 회원 탈퇴
+        - Log.java : 로그
+        
+   	- c. com.test.toy.user.repository
+    	- UserDAO.java
+        - UserrDTO.java
+        - LogDTO.java
+        
+    - g. com.test.toy.place 
+    	- Place.java : 목록 보기
+    	- AddPlace.java : 추가 하기 
+    	- View.java  : 상세보기
+    	
+    - h. com.test.toy.place.repository
+    	- 
+    뷰
+    - a. views 
+		- index.jsp : 메인 페이지
+	- b. views > inc : 조각 페이지
+		- asset.jsp
+		- headerjsp
+	- c. views > user
+		- register.jsp
+		- login.jsp
+		- info.jsp
+		- unregister.jsp
+		
+	- e. views > place
+		- place.jsp
+		- addplace.jsp
+		- view.jsp
+		
+9. X CRUD
+
+9. X 권한 처리
+	- 목록보기, 상세보기 > 비회원O, 회원O
+	- 글쓰기, 수정하기, 삭제하기 > 비회원X, 회원 O
+	- 방식 > 노출 제어
+	- 수정하기, 삭제하기 > 비회원 X, 회원(선택적 > 자기글만 가능)
+	- 수정하기, 삭제하기 > 관리자(모든글에 가능)
+    	
+9. X 페이징
+	- 가상으로 일정 개수의 게시물을 가져오는 기법
+	- rownum > rnum > 
+	
+9. X 답변형 게시판, 계층형 게시판, 스레드 게시판
+	- thread, depth > 값을 넣는 규칙
+	a. 새글 쓰기
+		1. 현존하는 모든 게시물 중에서 가장 큰 thread값을 찾아서, 그 값에 +1000을 한 값을 새글의 thread값으로 넣는다.
+		2. 새글의 depth는 항상 0 을 넣는다.
+	
+	b. 답변글 쓰기
+		1. 현존하는 모든 게시물의 thread값을 대상으로, 현재 작성중인 답변글의 부모글 thread 값보다 작고, 이전 새글의 thread값보다 큰 thread를 모두 찾아서 -1을 한다.
+		2. 답변글의 thread값은 부모글의 thread-0을 넣는다.
+		3. 답변글의 depth값을 부모글의 depth+1을 넣는다.
+		
+9. X 회원 탈퇴 
+		
+	
+	
+	

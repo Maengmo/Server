@@ -1,0 +1,55 @@
+/* main.css */
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #CCC;
+}
+
+#header > h1 {
+	border : 0;
+	padding : 0;
+	margin : 1rem;
+	font-size : 1rem;
+}
+
+#header > h1 > .material-symbols-outlined {
+	transform: translate(0, 6px);
+}
+
+#header > nav {
+	margin: 1rem;
+}
+
+#header > nav > a {
+   padding-right: 2px;  
+   font-size: 14px; 
+}
+
+#header > nav > a::after {
+   content: ' ·';
+}
+
+#header > nav > a:last-child::after {
+   content: '';
+}
+
+#main {
+	margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
